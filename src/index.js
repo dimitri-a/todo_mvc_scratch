@@ -15,7 +15,7 @@ const store = createStore(
 )
 
 ReactDOM.render(<Provider store={store}>
-    <App />
+    <Counter />
 </Provider>, document.getElementById('root'));
 
 registerServiceWorker();

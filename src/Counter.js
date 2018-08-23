@@ -9,7 +9,6 @@ export class Counter extends Component {
       }
    
     handleClick = () => {
-        debugger;
         this.props.incrementCounter();
     }
 
@@ -25,7 +24,6 @@ export class Counter extends Component {
 const mapStateToProps = (state) => ({
     counter: state
 })
-
 
 
 export default connect(mapStateToProps, { incrementCounter })(Counter)
