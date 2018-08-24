@@ -5,14 +5,14 @@ const InputText = ({addTodo}) => {
     return (
         <div>
             <input type='text'></input>
-            <button onClick={props.addTodo}>add todo</button>
+            <button onClick={this.props.addTodo}>add todo</button>
         </div>
     )
 }
 
 //question :define proptype for action?
 InputText.propTypes = {
-    addTodo: function
+    addTodo: PropTypes.func.isRequired
 }
 
 export default InputText

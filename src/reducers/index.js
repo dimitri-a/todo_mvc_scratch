@@ -1,12 +1,13 @@
-const initialState = 0;
+const initialState = []
 
-export default (state = initialState, action) => {
+const todos =(state = initialState, action) => {
   switch (action.type) {
+  case 'ADD_TODO':
+    return [...state ]
 
-    case 'INCREMENT':
-      return state + 1;
-
-    default:
-      return state
+  default:
+    return state
   }
 }
+export default todos;
+
