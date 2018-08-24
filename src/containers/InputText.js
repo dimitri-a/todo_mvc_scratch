@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
-import inputText from '../components/InputText'
+import Input from '../components/InputText'
 import addTodo from '../actions/addTodoAction'
 
 export class InputText extends Component {
@@ -10,4 +10,9 @@ export class InputText extends Component {
   }
 }
 
-export default connect(null, {addTodo})(inputText)
+
+const mapDispatchToProps = ({
+    onTodoClick: toggleTodo
+  })
+
+export default connect(null, {addTodo})(Input)
