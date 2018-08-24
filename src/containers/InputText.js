@@ -11,8 +11,4 @@ export class InputText extends Component {
 }
 
 
-const mapDispatchToProps = ({
-    onTodoClick: toggleTodo
-  })
-
 export default connect(null, {addTodo})(Input)
