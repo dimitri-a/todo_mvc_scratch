@@ -12,7 +12,8 @@ export class InputText extends Component {
     }
 
     onAdd = () => {
-        this.props.addTodo('hello there')
+        debugger
+        this.props.addTodo(this.state.text)
     }
 
     render = () =>{
