@@ -1,14 +1,14 @@
-const initialState = ['hhellllo']
+const initialState = ['first']
 
-const todos = (state = initialState, action) => {
+const todos= (state = initialState, action) => {
   switch (action.type) {
     case 'ADD_TODO':
-      debugger
-      return [...state, action.payload]
+     // debugger
+      return action.param
 
     default:
       return state
   }
 }
-export default todos;
 
+export default todos

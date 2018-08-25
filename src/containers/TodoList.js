@@ -7,19 +7,19 @@ export class TodoList extends Component {
     prop: PropTypes
   }
 
+  constructor(props) {
+    super(props)
+  }
+  
+
   render() {
 
-    console.log('todos=',this.props.todos);
+    console.log('??? todos=',this.props.todos);
     return (
       <div>
         hi from todolist:
         <ul>
-        {this.props.todos.map((todo)=>{
-          (
-            <li>{todo}</li>
-          )
-
-        })}
+        {this.props.todos[0]}
         </ul>
       </div>
     )
@@ -27,7 +27,7 @@ export class TodoList extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  todos: state.todos === undefined ? [] : state.todos
+  todos: typeof state === 'undefined' ? [] : state
 })
 
 
