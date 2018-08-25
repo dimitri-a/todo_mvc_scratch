@@ -8,20 +8,27 @@ export class TodoList extends Component {
   }
 
   render() {
+
+    console.log('todos=',this.props.todos);
     return (
       <div>
-        hi from todolist
+        hi from todolist:
+        <ul>
+        {this.props.todos.map((todo)=>{
+          (
+            <li>{todo}</li>
+          )
+
+        })}
+        </ul>
       </div>
     )
   }
 }
 
 const mapStateToProps = (state) => ({
-  
+  todos: state.todos === undefined ? [] : state.todos
 })
 
-const mapDispatchToProps = {
-  
-}
 
-export default connect(mapStateToProps, mapDispatchToProps)(TodoList)
+export default connect(mapStateToProps, null)(TodoList)
