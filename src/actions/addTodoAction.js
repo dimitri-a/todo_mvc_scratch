@@ -1,6 +1,11 @@
-const addTodo = (param) => ({
+export const addTodo = (param) => ({
   type: 'ADD_TODO',
   param
 })
 
-export default addTodo;
+export const completeTodo = (param) => ({
+  type: 'COMPLETE_TODO',
+  param
+})
+
+

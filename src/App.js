@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div>
         <InputText />
-        {/* <TodoList /> */}
+        <TodoList />
         <FilterThing />
       </div>
     );
