@@ -13,7 +13,7 @@ export class InputText extends Component {
     }
 
     onAdd = () => {
-        this.props.addTodo(this.state.text)
+        this.props.addTodo('hello there')
     }
 
     render = () =>{
