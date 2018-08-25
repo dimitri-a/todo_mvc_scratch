@@ -31,7 +31,7 @@ InputText.propTypes = {
 }
 
 const mapStateToProps = state => ({
-    todos: state
+    todos: state.todos
   })
   
 

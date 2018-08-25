@@ -13,7 +13,7 @@ export class TodoList extends Component {
 
     return (
       <div>
-       <TodoListItems todos={this.todos}/>
+        <TodoListItems todos={this.todos} />
       </div>
     )
   }
