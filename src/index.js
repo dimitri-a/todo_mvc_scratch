@@ -11,7 +11,8 @@ const initialState = { items: [] }
 
 const store = createStore(
     reducer,
-    initialState)
+    applyMiddleware(), window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  )
 
 ReactDOM.render(<Provider store={store}>
   <App/>

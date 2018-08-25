@@ -1,6 +1,6 @@
 const addTodo = (param) => ({
   type: 'ADD_TODO',
- param
+  param
 })
 
 export default addTodo;

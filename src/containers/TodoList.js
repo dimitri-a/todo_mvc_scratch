@@ -1,35 +1,26 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import TodoListItems from '../components/TodoListItems'
 
 export class TodoList extends Component {
   static propTypes = {
     prop: PropTypes
   }
 
-
   render() {
-
-
-console.log('this.props.todos',this.props.todos);
+    console.log('this.props.todos', this.props.todos);
 
     return (
       <div>
-        hi from todolist:
-        <ul>
-
-          {this.props.todos.map((todo)=>{
-            <li>{todo}</li>
-          })}
-
-        </ul>
+       <TodoListItems todos={this.todos}/>
       </div>
     )
   }
 }
 
 const mapStateToProps = (state) => ({
-  todos: state.items.length > 0 ? state.items : []
+  todos: state.todos
 })
 
 

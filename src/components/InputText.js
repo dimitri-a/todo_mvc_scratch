@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import { connect} from 'react-redux'
 import addTodo from '../actions/addTodoAction'
 
-
 export class InputText extends Component {
     state = { text: '' }
 
