@@ -10,5 +10,4 @@ export class InputText extends Component {
   }
 }
 
-
 export default connect(null, {addTodo})(Input)

@@ -1,13 +1,29 @@
 import React from 'react'
+import {Component} from 'react'
 import PropTypes from 'prop-types'
 
-const InputText = ({addTodo}) => {
-    return (
-        <div>
-            <input type='text'></input>
-            <button onClick={this.props.addTodo}>add todo</button>
-        </div>
-    )
+
+
+
+export class InputText extends Component {
+    state = { text: '' }
+
+    onChangeText = (e) => {
+        this.setState({ text: e.target.value })
+    }
+
+    onAdd = () => {
+        this.addTodo(this.state.text)
+    }
+
+    render = () =>{
+        return (
+            <div>
+                <input type='text' onChange={this.onChangeText} value={this.state.text}></input>
+                <button onClick={this.onAdd}>add todo</button>
+            </div>
+        )
+    }
 }
 
 //question :define proptype for action?
