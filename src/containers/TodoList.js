@@ -8,17 +8,19 @@ export class TodoList extends Component {
   }
 
 
-
-
-
   render() {
+
+
+console.log('this.props.todos',this.props.todos);
 
     return (
       <div>
         hi from todolist:
         <ul>
-          
-          {this.todos.map}
+
+          {this.props.todos.map((todo)=>{
+            <li>{todo}</li>
+          })}
 
         </ul>
       </div>
@@ -27,7 +29,7 @@ export class TodoList extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  todos: state.items.length > 0 ? state : []
+  todos: state.items.length > 0 ? state.items : []
 })
 
 
