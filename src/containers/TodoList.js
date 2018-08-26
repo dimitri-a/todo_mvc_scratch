@@ -10,11 +10,12 @@ export class TodoList extends Component {
   }
 
   render() {
-    console.log('this.props.todos hoer2', this.props.todos);
+    console.log('this.props.todos tl cont', this.props.todos);
 
     return (
       <div>
-        <TodoListItems todos={this.props.todos} completeTodo={this.props.completeTodo} />
+        hello 
+        <TodoListItems todos={this.props.todos} />
       </div>
     )
   }
