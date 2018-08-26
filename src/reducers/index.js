@@ -11,7 +11,7 @@ export default (state = initialState, action) => {
       }]
 
     case 'COMPLETE_TODO':
-     debugger
+     //debugger
      console.log(state);
       return state.map(todo => {
         todo.id === action.param ?
@@ -24,12 +24,3 @@ export default (state = initialState, action) => {
       return state
   }
 }
-
-
-// case COMPLETE_TODO:
-//       return state.map(todo =>
-//         todo.id === action.id ?
-//           { ...todo, completed: !todo.completed } :
-//           todo
-//       )
-
