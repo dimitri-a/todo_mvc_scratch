@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import TodoListItems from '../components/TodoListItems'
+import {completeTodo} from '../actions/addTodoAction'
 
 export class TodoList extends Component {
   static propTypes = {
@@ -13,15 +14,15 @@ export class TodoList extends Component {
 
     return (
       <div>
-        <TodoListItems todos={this.props.todos} />
+        <TodoListItems todos={this.props.todos} completeTodo={this.props.completeTodo} />
       </div>
     )
   }
 }
 
 const mapStateToProps = (state) => ({
-  todos: state.todos
+  todos: state
 })
 
 
-export default connect(mapStateToProps, null)(TodoList)
+export default connect(mapStateToProps, {completeTodo})(TodoList)

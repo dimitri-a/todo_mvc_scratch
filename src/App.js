@@ -12,8 +12,8 @@ class App extends Component {
     return (
       <div>
         <InputText />
-        <TodoList />
-        <FilterThing />
+        {/* <TodoList />
+        <FilterThing /> */}
       </div>
     );
   }
