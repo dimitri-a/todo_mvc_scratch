@@ -13,7 +13,9 @@ export default class TodoListItems extends Component {
         console.log('this.props.todos tl comp', this.props.todos);
         return (
             <ul>
-                
+                {
+                    this.props.todos.map(t => <li>{t.text}</li>)
+                }
             </ul>
 
         )
