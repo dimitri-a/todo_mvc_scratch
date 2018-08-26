@@ -12,16 +12,16 @@ export class TodoList extends Component {
     prop: PropTypes
   }
 
-  render() {
+  // render() {
 
-    console.log('this.props.todos tl cont', this.props.todos);
+  //   console.log('this.props.todos tl cont', this.props.todos);
 
-    return (
-      <div>
-        <TodoListItems todos={this.props.todos}/>
-      </div>
-    )
-  }
+  //   return (
+  //     <div>
+  //       <TodoListItems todos={this.props.todos}/>
+  //     </div>
+  //   )
+  // }
 }
 
 const mapStateToProps = (state) => ({
@@ -33,7 +33,7 @@ const mapDispatchToProps = dispatch => ({
 })
 
 
-export default connect(mapStateToProps,mapDispatchToProps )(TodoList)
+export default connect(mapStateToProps,mapDispatchToProps )(TodoListItems)
 
 
 
