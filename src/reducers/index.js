@@ -11,7 +11,7 @@ export default (state = initialState, action) => {
       }]
 
     case 'COMPLETE_TODO':
-      debugger
+     debugger
       return state.map(todo => {
         if (todo.id === action.param.id)
         {
@@ -24,7 +24,6 @@ export default (state = initialState, action) => {
       });
 
     default:
-      debugger
       return state
   }
 }

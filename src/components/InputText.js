@@ -13,7 +13,7 @@ export class InputText extends Component {
     }
 
     onAdd = () => {
-        debugger
+        //debugger
         this.props.addTodo(this.state.text)
     }
 
