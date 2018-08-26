@@ -14,8 +14,7 @@ export class TodoList extends Component {
 
     return (
       <div>
-        hello 
-        <TodoListItems todos={this.props.todos} />
+        <TodoListItems todos={this.props.todos} completeTodo={completeTodo} />
       </div>
     )
   }
