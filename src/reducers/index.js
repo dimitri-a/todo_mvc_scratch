@@ -11,14 +11,14 @@ export default (state = initialState, action) => {
       }]
 
     case 'COMPLETE_TODO':
-     //debugger
-     console.log(state);
-      return state.map(todo => {
+     debugger
+     console.log('reducer',state);
+      return state.map(todo => 
         todo.id === action.param ?
         {...todo,completed:!todo.completed}
         :
         todo
-      });
+      );
 
     default:
       return state

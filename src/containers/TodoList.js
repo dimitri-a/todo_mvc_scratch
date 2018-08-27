@@ -11,17 +11,6 @@ export class TodoList extends Component {
   static propTypes = {
     prop: PropTypes
   }
-
-  // render() {
-
-  //   console.log('this.props.todos tl cont', this.props.todos);
-
-  //   return (
-  //     <div>
-  //       <TodoListItems todos={this.props.todos}/>
-  //     </div>
-  //   )
-  // }
 }
 
 const mapStateToProps = (state) => ({

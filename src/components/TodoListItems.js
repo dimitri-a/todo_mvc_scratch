@@ -3,6 +3,7 @@ import TodoItem from './TodoItem';
 
 export default ({ todos, actions }) => {
     console.log('todos', todos[0])
+    debugger
     return (
         <ul>
             {todos.map((todo) => <TodoItem item={todo} {...actions} />)}
