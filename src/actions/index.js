@@ -8,7 +8,6 @@ export const completeTodo = (param) => ({
   param
 })
 
-
 export const filterShowAll = () => ({
   type: 'SHOW_ALL'}
 )

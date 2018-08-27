@@ -4,7 +4,6 @@ export class TodoItem extends Component {
 
   render() {
     const { item, completeTodo } = this.props;
-    debugger
     console.log('item=', item.completed);
     return (
       <div>
