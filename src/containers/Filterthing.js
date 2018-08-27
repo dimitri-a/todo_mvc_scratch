@@ -1,29 +1,12 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import { bindActionCreators } from 'redux'
+import * as TodoActions from '../actions'
+import Filterthing  from "../components/FilterThing";
 
-export class Filterthing extends Component {
-  static propTypes = {
-    prop: PropTypes
-  }
-
-  render() {
-    return (
-      <div>
-       <a>All</a>{' '}
-       <a>Completed</a>{' '}
-       <a>Uncompleted</a>
-      </div>
-    )
-  }
-}
-
-const mapStateToProps = (state) => ({
-  
+const mapDispatchToProps = dispatch => ({
+  actions: bindActionCreators(TodoActions, dispatch)
 })
 
-const mapDispatchToProps = {
-  
-}
-
-export default connect(mapStateToProps, mapDispatchToProps)(Filterthing)
+export default connect(null, mapDispatchToProps)(Filterthing)

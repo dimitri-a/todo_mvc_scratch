@@ -9,3 +9,9 @@ export const completeTodo = (param) => ({
 })
 
 
+export const filterShowAll = () => ({
+  type: 'SHOW_ALL'}
+)
+
+
+
