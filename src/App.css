@@ -26,3 +26,13 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.completed {
+  text-decoration: line-through;
+}
+
+input[type=checkbox]:checked + label {
+  color:red;
+  text-decoration: line-through;
+} /*This is the MDN spec for doing this*/
+

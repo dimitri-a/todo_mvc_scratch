@@ -10,7 +10,9 @@ export class Filterthing extends Component {
   render() {
     return (
       <div>
-        hi frmo Filterthing
+       <a>All</a>{' '}
+       <a>Completed</a>{' '}
+       <a>Uncompleted</a>
       </div>
     )
   }
