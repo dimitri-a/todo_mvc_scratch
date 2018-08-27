@@ -1,12 +1,12 @@
 import React from 'react'
 import TodoItem from './TodoItem';
 
-export default ({ todos, actions }) => {
-    console.log('hier', todos[0])
-    debugger
+export default ({ filteredTodos, actions }) => {
+    console.log('filterd todos in comp', filteredTodos)
+    // debugger
     return (
         <ul>
-            {todos.map((todo) => <TodoItem item={todo} {...actions} />)}
+            {filteredTodos.map((todo) => <TodoItem item={todo} {...actions} />)}
         </ul>
     )
 }

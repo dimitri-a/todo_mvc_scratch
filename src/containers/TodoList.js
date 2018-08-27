@@ -6,6 +6,7 @@ import TodoListItems from '../components/TodoListItems'
 
 import { bindActionCreators } from 'redux'
 import * as TodoActions from '../actions'
+import {getVisibleTodos} from '../selectors'
 
 export class TodoList extends Component {
   static propTypes = {
@@ -14,7 +15,7 @@ export class TodoList extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  todos: state.todos
+  filteredTodos: getVisibleTodos(state)
 })
 
 const mapDispatchToProps = dispatch => ({
