@@ -13,5 +13,16 @@ export const filterShowAll = () => ({
   type: 'SHOW_ALL'}
 )
 
+export const filterCompleted = () => ({
+  type: 'SHOW_COMPLETED'}
+)
+
+export const filterUnCompleted = () => ({
+  type: 'SHOW_UNCOMPLETED'}
+)
+
+
+
+
 
 
