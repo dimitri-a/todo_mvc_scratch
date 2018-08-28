@@ -11,20 +11,6 @@ export const getVisibleTodos = createSelector(
     (todos, filter) => {
         console.log('filter=',filter)
         switch (filter) {
-            case 'SHOW_ALL':
-                return todos
-
-                break;
-            // case 'SHOW_COMPLETED':
-
-            //     return state.map((todo)=>{
-            //         if (todo.completed)
-            //         {
-            //             return todo;
-            //         }
-
-            //     })
-            //     break;
 
             default:
                 return todos;
